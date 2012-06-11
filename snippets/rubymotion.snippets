@@ -16,6 +16,8 @@ snippet URLForDirectory:inDomain:appropriateForURL:create:error:
 	URLForDirectory(${1}, inDomain: ${2}, appropriateForURL: ${3}, create: ${4}, error: ${5})${6}
 snippet URLForKey:
 	URLForKey(${1})${2}
+snippet URLForPersistentStore:
+	URLForPersistentStore(${1})${2}
 snippet URLForPublishingUbiquitousItemAtURL:expirationDate:error:
 	URLForPublishingUbiquitousItemAtURL(${1}, expirationDate: ${2}, error: ${3})${4}
 snippet URLForResource:withExtension:
@@ -102,6 +104,8 @@ snippet addAttributes:range:
 	addAttributes(${1}, range: ${2})${3}
 snippet addButtonWithTitle:
 	addButtonWithTitle(${1})${2}
+snippet addCacheNodes:
+	addCacheNodes(${1})${2}
 snippet addCharactersInRange:
 	addCharactersInRange(${1})${2}
 snippet addCharactersInString:
@@ -152,6 +156,8 @@ snippet addOperationWithBlock:
 	addOperationWithBlock(${1})${2}
 snippet addOperations:waitUntilFinished:
 	addOperations(${1}, waitUntilFinished: ${2})${3}
+snippet addPersistentStoreWithType:configuration:URL:options:error:
+	addPersistentStoreWithType(${1}, configuration: ${2}, URL: ${3}, options: ${4}, error: ${5})${6}
 snippet addPort:forMode:
 	addPort(${1}, forMode: ${2})${3}
 snippet addPrintFormatter:startingAtPageAtIndex:
@@ -304,6 +310,10 @@ snippet arrayWithObject:
 	arrayWithObject(${1})${2}
 snippet arrayWithObjects:count:
 	arrayWithObjects(${1}, count: ${2})${3}
+snippet assignObject:toPersistentStore:
+	assignObject(${1}, toPersistentStore: ${2})${3}
+snippet associateSourceInstance:withDestinationInstance:forEntityMapping:
+	associateSourceInstance(${1}, withDestinationInstance: ${2}, forEntityMapping: ${3})${4}
 snippet attemptRecoveryFromError:optionIndex:
 	attemptRecoveryFromError(${1}, optionIndex: ${2})${3}
 snippet attemptRecoveryFromError:optionIndex:delegate:didRecoverSelector:contextInfo:
@@ -338,6 +348,8 @@ snippet availableTagSchemesForLanguage:
 	availableTagSchemesForLanguage(${1})${2}
 snippet awakeAfterUsingCoder:
 	awakeAfterUsingCoder(${1})${2}
+snippet awakeFromSnapshotEvents:
+	awakeFromSnapshotEvents(${1})${2}
 snippet backButtonBackgroundImageForState:barMetrics:
 	backButtonBackgroundImageForState(${1}, barMetrics: ${2})${3}
 snippet backButtonBackgroundVerticalPositionAdjustmentForBarMetrics:
@@ -364,6 +376,8 @@ snippet beginBackgroundTaskWithExpirationHandler:
 	beginBackgroundTaskWithExpirationHandler(${1})${2}
 snippet beginCustomizingItems:
 	beginCustomizingItems(${1})${2}
+snippet beginEntityMapping:manager:error:
+	beginEntityMapping(${1}, manager: ${2}, error: ${3})${4}
 snippet beginTrackingWithTouch:withEvent:
 	beginTrackingWithTouch(${1}, withEvent: ${2})${3}
 snippet bestPaperForPageSize:withPapersFromArray:
@@ -410,6 +424,8 @@ snippet cStringUsingEncoding:
 	cStringUsingEncoding(${1})${2}
 snippet cache:willEvictObject:
 	cache(${1}, willEvictObject: ${2})${3}
+snippet cacheNodeForObjectID:
+	cacheNodeForObjectID(${1})${2}
 snippet cachedResponseForRequest:
 	cachedResponseForRequest(${1})${2}
 snippet canBeConvertedToEncoding:
@@ -436,6 +452,8 @@ snippet cancelAuthenticationChallenge:
 	cancelAuthenticationChallenge(${1})${2}
 snippet cancelLocalNotification:
 	cancelLocalNotification(${1})${2}
+snippet cancelMigrationWithError:
+	cancelMigrationWithError(${1})${2}
 snippet cancelPerformSelector:target:argument:
 	cancelPerformSelector(${1}, target: ${2}, argument: ${3})${4}
 snippet cancelPerformSelectorsWithTarget:
@@ -518,6 +536,8 @@ snippet colorWithString:
 	colorWithString(${1})${2}
 snippet colorWithWhite:alpha:
 	colorWithWhite(${1}, alpha: ${2})${3}
+snippet committedValuesForKeys:
+	committedValuesForKeys(${1})${2}
 snippet commonPrefixWithString:options:
 	commonPrefixWithString(${1}, options: ${2})${3}
 snippet compare:
@@ -630,6 +650,16 @@ snippet continueTrackingWithTouch:withEvent:
 	continueTrackingWithTouch(${1}, withEvent: ${2})${3}
 snippet continueWithoutCredentialForAuthenticationChallenge:
 	continueWithoutCredentialForAuthenticationChallenge(${1})${2}
+snippet controller:didChangeObject:atIndexPath:forChangeType:newIndexPath:
+	controller(${1}, didChangeObject: ${2}, atIndexPath: ${3}, forChangeType: ${4}, newIndexPath: ${5})${6}
+snippet controller:didChangeSection:atIndex:forChangeType:
+	controller(${1}, didChangeSection: ${2}, atIndex: ${3}, forChangeType: ${4})${5}
+snippet controller:sectionIndexTitleForSectionName:
+	controller(${1}, sectionIndexTitleForSectionName: ${2})${3}
+snippet controllerDidChangeContent:
+	controllerDidChangeContent(${1})${2}
+snippet controllerWillChangeContent:
+	controllerWillChangeContent(${1})${2}
 snippet convertPoint:fromLayer:
 	convertPoint(${1}, fromLayer: ${2})${3}
 snippet convertPoint:fromView:
@@ -684,6 +714,8 @@ snippet correctionCheckingResultWithRange:replacementString:
 	correctionCheckingResultWithRange(${1}, replacementString: ${2})${3}
 snippet countByEnumeratingWithState:objects:count:
 	countByEnumeratingWithState(${1}, objects: ${2}, count: ${3})${4}
+snippet countForFetchRequest:error:
+	countForFetchRequest(${1}, error: ${2})${3}
 snippet countForObject:
 	countForObject(${1})${2}
 snippet countOfIndexesInRange:
@@ -692,6 +724,8 @@ snippet createCGImage:fromRect:
 	createCGImage(${1}, fromRect: ${2})${3}
 snippet createCGImage:fromRect:format:colorSpace:
 	createCGImage(${1}, fromRect: ${2}, format: ${3}, colorSpace: ${4})${5}
+snippet createDestinationInstancesForSourceInstance:entityMapping:manager:error:
+	createDestinationInstancesForSourceInstance(${1}, entityMapping: ${2}, manager: ${3}, error: ${4})${5}
 snippet createDirectoryAtPath:attributes:
 	createDirectoryAtPath(${1}, attributes: ${2})${3}
 snippet createDirectoryAtPath:withIntermediateDirectories:attributes:error:
@@ -700,6 +734,8 @@ snippet createDirectoryAtURL:withIntermediateDirectories:attributes:error:
 	createDirectoryAtURL(${1}, withIntermediateDirectories: ${2}, attributes: ${3}, error: ${4})${5}
 snippet createFileAtPath:contents:attributes:
 	createFileAtPath(${1}, contents: ${2}, attributes: ${3})${4}
+snippet createRelationshipsForDestinationInstance:entityMapping:manager:error:
+	createRelationshipsForDestinationInstance(${1}, entityMapping: ${2}, manager: ${3}, error: ${4})${5}
 snippet createSymbolicLinkAtPath:pathContent:
 	createSymbolicLinkAtPath(${1}, pathContent: ${2})${3}
 snippet createSymbolicLinkAtPath:withDestinationPath:error:
@@ -866,10 +902,14 @@ snippet defaultValueForKey:
 	defaultValueForKey(${1})${2}
 snippet delete:
 	delete(${1})${2}
+snippet deleteCacheWithName:
+	deleteCacheWithName(${1})${2}
 snippet deleteCharactersInRange:
 	deleteCharactersInRange(${1})${2}
 snippet deleteCookie:
 	deleteCookie(${1})${2}
+snippet deleteObject:
+	deleteObject(${1})${2}
 snippet deleteRowsAtIndexPaths:withRowAnimation:
 	deleteRowsAtIndexPaths(${1}, withRowAnimation: ${2})${3}
 snippet deleteSections:withRowAnimation:
@@ -884,10 +924,16 @@ snippet descriptionWithLocale:indent:
 	descriptionWithLocale(${1}, indent: ${2})${3}
 snippet deselectRowAtIndexPath:animated:
 	deselectRowAtIndexPath(${1}, animated: ${2})${3}
+snippet destinationEntityForEntityMapping:
+	destinationEntityForEntityMapping(${1})${2}
+snippet destinationInstancesForEntityMappingNamed:sourceInstances:
+	destinationInstancesForEntityMappingNamed(${1}, sourceInstances: ${2})${3}
 snippet destinationOfSymbolicLinkAtPath:error:
 	destinationOfSymbolicLinkAtPath(${1}, error: ${2})${3}
 snippet detachNewThreadSelector:toTarget:withObject:
 	detachNewThreadSelector(${1}, toTarget: ${2}, withObject: ${3})${4}
+snippet detectConflictsForObject:
+	detectConflictsForObject(${1})${2}
 snippet detectorOfType:context:options:
 	detectorOfType(${1}, context: ${2}, options: ${3})${4}
 snippet dictionaryForKey:
@@ -912,8 +958,12 @@ snippet dictionaryWithObjects:forKeys:count:
 	dictionaryWithObjects(${1}, forKeys: ${2}, count: ${3})${4}
 snippet dictionaryWithValuesForKeys:
 	dictionaryWithValuesForKeys(${1})${2}
+snippet didAccessValueForKey:
+	didAccessValueForKey(${1})${2}
 snippet didAddSubview:
 	didAddSubview(${1})${2}
+snippet didAddToPersistentStoreCoordinator:
+	didAddToPersistentStoreCoordinator(${1})${2}
 snippet didAnimateFirstHalfOfRotationToInterfaceOrientation:
 	didAnimateFirstHalfOfRotationToInterfaceOrientation(${1})${2}
 snippet didChange:valuesAtIndexes:forKey:
@@ -1106,12 +1156,22 @@ snippet endCustomizingAnimated:
 	endCustomizingAnimated(${1})${2}
 snippet endEditing:
 	endEditing(${1})${2}
+snippet endEntityMapping:manager:error:
+	endEntityMapping(${1}, manager: ${2}, error: ${3})${4}
+snippet endInstanceCreationForEntityMapping:manager:error:
+	endInstanceCreationForEntityMapping(${1}, manager: ${2}, error: ${3})${4}
+snippet endRelationshipCreationForEntityMapping:manager:error:
+	endRelationshipCreationForEntityMapping(${1}, manager: ${2}, error: ${3})${4}
 snippet endTrackingWithTouch:withEvent:
 	endTrackingWithTouch(${1}, withEvent: ${2})${3}
 snippet enqueueNotification:postingStyle:
 	enqueueNotification(${1}, postingStyle: ${2})${3}
 snippet enqueueNotification:postingStyle:coalesceMask:forModes:
 	enqueueNotification(${1}, postingStyle: ${2}, coalesceMask: ${3}, forModes: ${4})${5}
+snippet entitiesForConfiguration:
+	entitiesForConfiguration(${1})${2}
+snippet entityForName:inManagedObjectContext:
+	entityForName(${1}, inManagedObjectContext: ${2})${3}
 snippet enumerateAttribute:inRange:options:usingBlock:
 	enumerateAttribute(${1}, inRange: ${2}, options: ${3}, usingBlock: ${4})${5}
 snippet enumerateAttributesInRange:options:usingBlock:
@@ -1172,12 +1232,20 @@ snippet exchangeObjectAtIndex:withObjectAtIndex:
 	exchangeObjectAtIndex(${1}, withObjectAtIndex: ${2})${3}
 snippet exchangeSubviewAtIndex:withSubviewAtIndex:
 	exchangeSubviewAtIndex(${1}, withSubviewAtIndex: ${2})${3}
+snippet executeFetchRequest:error:
+	executeFetchRequest(${1}, error: ${2})${3}
+snippet executeRequest:withContext:error:
+	executeRequest(${1}, withContext: ${2}, error: ${3})${4}
+snippet existingObjectWithID:error:
+	existingObjectWithID(${1}, error: ${2})${3}
 snippet expressionForAggregate:
 	expressionForAggregate(${1})${2}
 snippet expressionForBlock:arguments:
 	expressionForBlock(${1}, arguments: ${2})${3}
 snippet expressionForConstantValue:
 	expressionForConstantValue(${1})${2}
+snippet expressionForFetch:context:countOnly:
+	expressionForFetch(${1}, context: ${2}, countOnly: ${3})${4}
 snippet expressionForFunction:arguments:
 	expressionForFunction(${1}, arguments: ${2})${3}
 snippet expressionForFunction:selectorName:arguments:
@@ -1204,6 +1272,12 @@ snippet featuresInImage:
 	featuresInImage(${1})${2}
 snippet featuresInImage:options:
 	featuresInImage(${1}, options: ${2})${3}
+snippet fetchRequestFromTemplateWithName:substitutionVariables:
+	fetchRequestFromTemplateWithName(${1}, substitutionVariables: ${2})${3}
+snippet fetchRequestTemplateForName:
+	fetchRequestTemplateForName(${1})${2}
+snippet fetchRequestWithEntityName:
+	fetchRequestWithEntityName(${1})${2}
 snippet fileAttributesAtPath:traverseLink:
 	fileAttributesAtPath(${1}, traverseLink: ${2})${3}
 snippet fileAttributesToWriteToURL:forSaveOperation:error:
@@ -1394,6 +1468,8 @@ snippet handleMachMessage:
 	handleMachMessage(${1})${2}
 snippet handlePortMessage:
 	handlePortMessage(${1})${2}
+snippet hasFaultForRelationshipNamed:
+	hasFaultForRelationshipNamed(${1})${2}
 snippet hasLearnedWord:
 	hasLearnedWord(${1})${2}
 snippet hasMemberInPlane:
@@ -1406,6 +1482,8 @@ snippet hitTest:
 	hitTest(${1})${2}
 snippet hitTest:withEvent:
 	hitTest(${1}, withEvent: ${2})${3}
+snippet identifierForNewStoreAtURL:
+	identifierForNewStoreAtURL(${1})${2}
 snippet ignoreTouch:forEvent:
 	ignoreTouch(${1}, forEvent: ${2})${3}
 snippet ignoreWord:
@@ -1496,6 +1574,8 @@ snippet indexPathByAddingIndex:
 	indexPathByAddingIndex(${1})${2}
 snippet indexPathForCell:
 	indexPathForCell(${1})${2}
+snippet indexPathForObject:
+	indexPathForObject(${1})${2}
 snippet indexPathForRow:inSection:
 	indexPathForRow(${1}, inSection: ${2})${3}
 snippet indexPathForRowAtPoint:
@@ -1524,6 +1604,8 @@ snippet indexesPassingTest:
 	indexesPassingTest(${1})${2}
 snippet indexesWithOptions:passingTest:
 	indexesWithOptions(${1}, passingTest: ${2})${3}
+snippet inferredMappingModelForSourceModel:destinationModel:error:
+	inferredMappingModelForSourceModel(${1}, destinationModel: ${2}, error: ${3})${4}
 snippet initByResolvingBookmarkData:options:relativeToURL:bookmarkDataIsStale:error:
 	initByResolvingBookmarkData(${1}, options: ${2}, relativeToURL: ${3}, bookmarkDataIsStale: ${4}, error: ${5})${6}
 snippet initDirectoryWithFileWrappers:
@@ -1624,6 +1706,8 @@ snippet initWithCoder:
 	initWithCoder(${1})${2}
 snippet initWithColor:
 	initWithColor(${1})${2}
+snippet initWithConcurrencyType:
+	initWithConcurrencyType(${1})${2}
 snippet initWithCondition:
 	initWithCondition(${1})${2}
 snippet initWithContentViewController:
@@ -1674,8 +1758,14 @@ snippet initWithDominantScript:languageMap:
 	initWithDominantScript(${1}, languageMap: ${2})${3}
 snippet initWithDouble:
 	initWithDouble(${1})${2}
+snippet initWithEntity:insertIntoManagedObjectContext:
+	initWithEntity(${1}, insertIntoManagedObjectContext: ${2})${3}
+snippet initWithEntityName:
+	initWithEntityName(${1})${2}
 snippet initWithExpressionType:
 	initWithExpressionType(${1})${2}
+snippet initWithFetchRequest:managedObjectContext:sectionNameKeyPath:cacheName:
+	initWithFetchRequest(${1}, managedObjectContext: ${2}, sectionNameKeyPath: ${3}, cacheName: ${4})${5}
 snippet initWithFileAtPath:
 	initWithFileAtPath(${1})${2}
 snippet initWithFileDescriptor:
@@ -1726,6 +1816,8 @@ snippet initWithIndexes:length:
 	initWithIndexes(${1}, length: ${2})${3}
 snippet initWithIndexesInRange:
 	initWithIndexesInRange(${1})${2}
+snippet initWithInsertedObjects:updatedObjects:deletedObjects:lockedObjects:
+	initWithInsertedObjects(${1}, updatedObjects: ${2}, deletedObjects: ${3}, lockedObjects: ${4})${5}
 snippet initWithInt:
 	initWithInt(${1})${2}
 snippet initWithInteger:
@@ -1758,12 +1850,16 @@ snippet initWithMachPort:
 	initWithMachPort(${1})${2}
 snippet initWithMachPort:options:
 	initWithMachPort(${1}, options: ${2})${3}
+snippet initWithManagedObjectModel:
+	initWithManagedObjectModel(${1})${2}
 snippet initWithMantissa:exponent:isNegative:
 	initWithMantissa(${1}, exponent: ${2}, isNegative: ${3})${4}
 snippet initWithMarkupText:
 	initWithMarkupText(${1})${2}
 snippet initWithMemoryCapacity:diskCapacity:diskPath:
 	initWithMemoryCapacity(${1}, diskCapacity: ${2}, diskPath: ${3})${4}
+snippet initWithMergeType:
+	initWithMergeType(${1})${2}
 snippet initWithName:
 	initWithName(${1})${2}
 snippet initWithName:data:
@@ -1776,6 +1872,10 @@ snippet initWithNotificationCenter:
 	initWithNotificationCenter(${1})${2}
 snippet initWithObject:
 	initWithObject(${1})${2}
+snippet initWithObjectID:
+	initWithObjectID(${1})${2}
+snippet initWithObjectID:withValues:version:
+	initWithObjectID(${1}, withValues: ${2}, version: ${3})${4}
 snippet initWithObjects:count:
 	initWithObjects(${1}, count: ${2})${3}
 snippet initWithObjects:forKeys:
@@ -1794,6 +1894,8 @@ snippet initWithPattern:options:error:
 	initWithPattern(${1}, options: ${2}, error: ${3})${4}
 snippet initWithPatternImage:
 	initWithPatternImage(${1})${2}
+snippet initWithPersistentStoreCoordinator:configurationName:URL:options:
+	initWithPersistentStoreCoordinator(${1}, configurationName: ${2}, URL: ${3}, options: ${4})${5}
 snippet initWithProgressViewStyle:
 	initWithProgressViewStyle(${1})${2}
 snippet initWithProperties:
@@ -1834,6 +1936,10 @@ snippet initWithSet:copyItems:
 	initWithSet(${1}, copyItems: ${2})${3}
 snippet initWithShort:
 	initWithShort(${1})${2}
+snippet initWithSource:newVersion:oldVersion:cachedSnapshot:persistedSnapshot:
+	initWithSource(${1}, newVersion: ${2}, oldVersion: ${3}, cachedSnapshot: ${4}, persistedSnapshot: ${5})${6}
+snippet initWithSourceModel:destinationModel:
+	initWithSourceModel(${1}, destinationModel: ${2})${3}
 snippet initWithStream:
 	initWithStream(${1})${2}
 snippet initWithString:
@@ -1940,6 +2046,10 @@ snippet insertAttributedString:atIndex:
 	insertAttributedString(${1}, atIndex: ${2})${3}
 snippet insertDictationResult:
 	insertDictationResult(${1})${2}
+snippet insertNewObjectForEntityForName:inManagedObjectContext:
+	insertNewObjectForEntityForName(${1}, inManagedObjectContext: ${2})${3}
+snippet insertObject:
+	insertObject(${1})${2}
 snippet insertObject:atIndex:
 	insertObject(${1}, atIndex: ${2})${3}
 snippet insertObjects:atIndexes:
@@ -1998,6 +2108,8 @@ snippet invokeWithTarget:
 	invokeWithTarget(${1})${2}
 snippet isCameraDeviceAvailable:
 	isCameraDeviceAvailable(${1})${2}
+snippet isConfiguration:compatibleWithStoreMetadata:
+	isConfiguration(${1}, compatibleWithStoreMetadata: ${2})${3}
 snippet isDaylightSavingTimeForDate:
 	isDaylightSavingTimeForDate(${1})${2}
 snippet isDeletableFileAtPath:
@@ -2038,6 +2150,8 @@ snippet isFlashAvailableForCameraDevice:
 	isFlashAvailableForCameraDevice(${1})${2}
 snippet isKindOfClass:
 	isKindOfClass(${1})${2}
+snippet isKindOfEntity:
+	isKindOfEntity(${1})${2}
 snippet isMemberOfClass:
 	isMemberOfClass(${1})${2}
 snippet isPartialStringValid:newEditingString:errorDescription:
@@ -2112,6 +2226,8 @@ snippet linkItemAtPath:toPath:error:
 	linkItemAtPath(${1}, toPath: ${2}, error: ${3})${4}
 snippet linkItemAtURL:toURL:error:
 	linkItemAtURL(${1}, toURL: ${2}, error: ${3})${4}
+snippet load:
+	load(${1})${2}
 snippet loadAndReturnError:
 	loadAndReturnError(${1})${2}
 snippet loadData:MIMEType:textEncodingName:baseURL:
@@ -2120,6 +2236,8 @@ snippet loadFromContents:ofType:error:
 	loadFromContents(${1}, ofType: ${2}, error: ${3})${4}
 snippet loadHTMLString:baseURL:
 	loadHTMLString(${1}, baseURL: ${2})${3}
+snippet loadMetadata:
+	loadMetadata(${1})${2}
 snippet loadNibNamed:owner:options:
 	loadNibNamed(${1}, owner: ${2}, options: ${3})${4}
 snippet loadRequest:
@@ -2170,6 +2288,14 @@ snippet makeTextWritingDirectionLeftToRight:
 	makeTextWritingDirectionLeftToRight(${1})${2}
 snippet makeTextWritingDirectionRightToLeft:
 	makeTextWritingDirectionRightToLeft(${1})${2}
+snippet managedObjectContextDidRegisterObjectsWithIDs:
+	managedObjectContextDidRegisterObjectsWithIDs(${1})${2}
+snippet managedObjectContextDidUnregisterObjectsWithIDs:
+	managedObjectContextDidUnregisterObjectsWithIDs(${1})${2}
+snippet managedObjectIDForURIRepresentation:
+	managedObjectIDForURIRepresentation(${1})${2}
+snippet mappingModelFromBundles:forSourceModel:destinationModel:
+	mappingModelFromBundles(${1}, forSourceModel: ${2}, destinationModel: ${3})${4}
 snippet matchesContentsOfURL:
 	matchesContentsOfURL(${1})${2}
 snippet matchesInString:options:range:
@@ -2184,6 +2310,18 @@ snippet maximumValueImageRectForBounds:
 	maximumValueImageRectForBounds(${1})${2}
 snippet member:
 	member(${1})${2}
+snippet mergeChangesFromContextDidSaveNotification:
+	mergeChangesFromContextDidSaveNotification(${1})${2}
+snippet mergedModelFromBundles:
+	mergedModelFromBundles(${1})${2}
+snippet mergedModelFromBundles:forStoreMetadata:
+	mergedModelFromBundles(${1}, forStoreMetadata: ${2})${3}
+snippet metadataForPersistentStore:
+	metadataForPersistentStore(${1})${2}
+snippet metadataForPersistentStoreOfType:URL:error:
+	metadataForPersistentStoreOfType(${1}, URL: ${2}, error: ${3})${4}
+snippet metadataForPersistentStoreWithURL:error:
+	metadataForPersistentStoreWithURL(${1}, error: ${2})${3}
 snippet metadataQuery:replacementObjectForResultObject:
 	metadataQuery(${1}, replacementObjectForResultObject: ${2})${3}
 snippet metadataQuery:replacementValueForAttribute:value:
@@ -2192,6 +2330,10 @@ snippet methodForSelector:
 	methodForSelector(${1})${2}
 snippet methodSignatureForSelector:
 	methodSignatureForSelector(${1})${2}
+snippet migratePersistentStore:toURL:options:withType:error:
+	migratePersistentStore(${1}, toURL: ${2}, options: ${3}, withType: ${4}, error: ${5})${6}
+snippet migrateStoreFromURL:type:options:withMappingModel:toDestinationURL:destinationType:destinationOptions:error:
+	migrateStoreFromURL(${1}, type: ${2}, options: ${3}, withMappingModel: ${4}, toDestinationURL: ${5}, destinationType: ${6}, destinationOptions: ${7}, error: ${8})${9}
 snippet minimumRangeOfUnit:
 	minimumRangeOfUnit(${1})${2}
 snippet minimumTrackImageForState:
@@ -2202,6 +2344,10 @@ snippet minusOrderedSet:
 	minusOrderedSet(${1})${2}
 snippet minusSet:
 	minusSet(${1})${2}
+snippet modelByMergingModels:
+	modelByMergingModels(${1})${2}
+snippet modelByMergingModels:forStoreMetadata:
+	modelByMergingModels(${1}, forStoreMetadata: ${2})${3}
 snippet motionBegan:withEvent:
 	motionBegan(${1}, withEvent: ${2})${3}
 snippet motionCancelled:withEvent:
@@ -2280,6 +2426,16 @@ snippet netServiceWillPublish:
 	netServiceWillPublish(${1})${2}
 snippet netServiceWillResolve:
 	netServiceWillResolve(${1})${2}
+snippet newCacheNodeForManagedObject:
+	newCacheNodeForManagedObject(${1})${2}
+snippet newObjectIDForEntity:referenceObject:
+	newObjectIDForEntity(${1}, referenceObject: ${2})${3}
+snippet newReferenceObjectForManagedObject:
+	newReferenceObjectForManagedObject(${1})${2}
+snippet newValueForRelationship:forObjectWithID:withContext:error:
+	newValueForRelationship(${1}, forObjectWithID: ${2}, withContext: ${3}, error: ${4})${5}
+snippet newValuesForObjectWithID:withContext:error:
+	newValuesForObjectWithID(${1}, withContext: ${2}, error: ${3})${4}
 snippet nextDaylightSavingTimeTransitionAfterDate:
 	nextDaylightSavingTimeTransitionAfterDate(${1})${2}
 snippet nibWithData:bundle:
@@ -2336,14 +2492,22 @@ snippet numberWithUnsignedShort:
 	numberWithUnsignedShort(${1})${2}
 snippet objectAtIndex:
 	objectAtIndex(${1})${2}
+snippet objectAtIndexPath:
+	objectAtIndexPath(${1})${2}
 snippet objectForInfoDictionaryKey:
 	objectForInfoDictionaryKey(${1})${2}
 snippet objectForKey:
 	objectForKey(${1})${2}
+snippet objectIDForEntity:referenceObject:
+	objectIDForEntity(${1}, referenceObject: ${2})${3}
 snippet objectIsForcedForKey:
 	objectIsForcedForKey(${1})${2}
 snippet objectIsForcedForKey:inDomain:
 	objectIsForcedForKey(${1}, inDomain: ${2})${3}
+snippet objectRegisteredForID:
+	objectRegisteredForID(${1})${2}
+snippet objectWithID:
+	objectWithID(${1})${2}
 snippet objectsAtIndexes:
 	objectsAtIndexes(${1})${2}
 snippet objectsForKeys:notFoundMarker:
@@ -2354,6 +2518,8 @@ snippet objectsWithOptions:passingTest:
 	objectsWithOptions(${1}, passingTest: ${2})${3}
 snippet observeValueForKeyPath:ofObject:change:context:
 	observeValueForKeyPath(${1}, ofObject: ${2}, change: ${3}, context: ${4})${5}
+snippet obtainPermanentIDsForObjects:error:
+	obtainPermanentIDsForObjects(${1}, error: ${2})${3}
 snippet offsetFromPosition:toPosition:
 	offsetFromPosition(${1}, toPosition: ${2})${3}
 snippet openURL:
@@ -2472,8 +2638,16 @@ snippet pathsMatchingExtensions:
 	pathsMatchingExtensions(${1})${2}
 snippet performAsynchronousFileAccessUsingBlock:
 	performAsynchronousFileAccessUsingBlock(${1})${2}
+snippet performBlock:
+	performBlock(${1})${2}
+snippet performBlockAndWait:
+	performBlockAndWait(${1})${2}
+snippet performCustomValidationForEntityMapping:manager:error:
+	performCustomValidationForEntityMapping(${1}, manager: ${2}, error: ${3})${4}
 snippet performDefaultHandlingForAuthenticationChallenge:
 	performDefaultHandlingForAuthenticationChallenge(${1})${2}
+snippet performFetch:
+	performFetch(${1})${2}
 snippet performSegueWithIdentifier:sender:
 	performSegueWithIdentifier(${1}, sender: ${2})${3}
 snippet performSelector:
@@ -2500,6 +2674,8 @@ snippet performSelectorOnMainThread:withObject:waitUntilDone:modes:
 	performSelectorOnMainThread(${1}, withObject: ${2}, waitUntilDone: ${3}, modes: ${4})${5}
 snippet persistentDomainForName:
 	persistentDomainForName(${1})${2}
+snippet persistentStoreForURL:
+	persistentStoreForURL(${1})${2}
 snippet persistentStoreTypeForFileType:
 	persistentStoreTypeForFileType(${1})${2}
 snippet phoneNumberCheckingResultWithRange:phoneNumber:
@@ -2636,6 +2812,8 @@ snippet presentedSubitemDidChangeAtURL:
 	presentedSubitemDidChangeAtURL(${1})${2}
 snippet previousLocationInView:
 	previousLocationInView(${1})${2}
+snippet primitiveValueForKey:
+	primitiveValueForKey(${1})${2}
 snippet printFormattersForPageAtIndex:
 	printFormattersForPageAtIndex(${1})${2}
 snippet printInfoWithDictionary:
@@ -2736,6 +2914,10 @@ snippet rectForSection:
 	rectForSection(${1})${2}
 snippet redoMenuTitleForUndoActionName:
 	redoMenuTitleForUndoActionName(${1})${2}
+snippet referenceObjectForObjectID:
+	referenceObjectForObjectID(${1})${2}
+snippet refreshObject:mergeChanges:
+	refreshObject(${1}, mergeChanges: ${2})${3}
 snippet registerClass:
 	registerClass(${1})${2}
 snippet registerDefaults:
@@ -2744,6 +2926,8 @@ snippet registerForRemoteNotificationTypes:
 	registerForRemoteNotificationTypes(${1})${2}
 snippet registerNib:forCellReuseIdentifier:
 	registerNib(${1}, forCellReuseIdentifier: ${2})${3}
+snippet registerStoreClass:forStoreType:
+	registerStoreClass(${1}, forStoreType: ${2})${3}
 snippet registerUndoWithTarget:selector:object:
 	registerUndoWithTarget(${1}, selector: ${2}, object: ${3})${4}
 snippet regularExpressionCheckingResultWithRanges:count:regularExpression:
@@ -2752,6 +2936,8 @@ snippet regularExpressionWithPattern:options:error:
 	regularExpressionWithPattern(${1}, options: ${2}, error: ${3})${4}
 snippet rejectProtectionSpaceAndContinueWithChallenge:
 	rejectProtectionSpaceAndContinueWithChallenge(${1})${2}
+snippet relationshipsWithDestinationEntity:
+	relationshipsWithDestinationEntity(${1})${2}
 snippet relinquishPresentedItemToReader:
 	relinquishPresentedItemToReader(${1})${2}
 snippet relinquishPresentedItemToWriter:
@@ -2840,6 +3026,8 @@ snippet removePasteboardWithName:
 	removePasteboardWithName(${1})${2}
 snippet removePersistentDomainForName:
 	removePersistentDomainForName(${1})${2}
+snippet removePersistentStore:error:
+	removePersistentStore(${1}, error: ${2})${3}
 snippet removePort:forMode:
 	removePort(${1}, forMode: ${2})${3}
 snippet removePropertyForKey:inRequest:
@@ -2916,6 +3104,8 @@ snippet resizableImageWithCapInsets:
 	resizableImageWithCapInsets(${1})${2}
 snippet resolveClassMethod:
 	resolveClassMethod(${1})${2}
+snippet resolveConflicts:error:
+	resolveConflicts(${1}, error: ${2})${3}
 snippet resolveInstanceMethod:
 	resolveInstanceMethod(${1})${2}
 snippet resolveWithTimeout:
@@ -2944,6 +3134,8 @@ snippet runMode:beforeDate:
 	runMode(${1}, beforeDate: ${2})${3}
 snippet runUntilDate:
 	runUntilDate(${1})${2}
+snippet save:
+	save(${1})${2}
 snippet savePresentedItemChangesWithCompletionHandler:
 	savePresentedItemChangesWithCompletionHandler(${1})${2}
 snippet saveToURL:forSaveOperation:completionHandler:
@@ -3086,8 +3278,12 @@ snippet secondsFromGMTForDate:
 	secondsFromGMTForDate(${1})${2}
 snippet sectionForObject:collationStringSelector:
 	sectionForObject(${1}, collationStringSelector: ${2})${3}
+snippet sectionForSectionIndexTitle:atIndex:
+	sectionForSectionIndexTitle(${1}, atIndex: ${2})${3}
 snippet sectionForSectionIndexTitleAtIndex:
 	sectionForSectionIndexTitleAtIndex(${1})${2}
+snippet sectionIndexTitleForSectionName:
+	sectionIndexTitleForSectionName(${1})${2}
 snippet sectionIndexTitlesForTableView:
 	sectionIndexTitlesForTableView(${1})${2}
 snippet seekToFileOffset:
@@ -3130,6 +3326,8 @@ snippet setAMSymbol:
 	setAMSymbol(${1})${2}
 snippet setAbbreviationDictionary:
 	setAbbreviationDictionary(${1})${2}
+snippet setAbstract:
+	setAbstract(${1})${2}
 snippet setAccessibilityActivationPoint:
 	setAccessibilityActivationPoint(${1})${2}
 snippet setAccessibilityContainer:
@@ -3182,6 +3380,8 @@ snippet setAdjustsImageWhenDisabled:
 	setAdjustsImageWhenDisabled(${1})${2}
 snippet setAdjustsImageWhenHighlighted:
 	setAdjustsImageWhenHighlighted(${1})${2}
+snippet setAffectedStores:
+	setAffectedStores(${1})${2}
 snippet setAffineTransform:
 	setAffineTransform(${1})${2}
 snippet setAlertAction:
@@ -3200,6 +3400,8 @@ snippet setAllowableMovement:
 	setAllowableMovement(${1})${2}
 snippet setAllowsEditing:
 	setAllowsEditing(${1})${2}
+snippet setAllowsExternalBinaryDataStorage:
+	setAllowsExternalBinaryDataStorage(${1})${2}
 snippet setAllowsFloats:
 	setAllowsFloats(${1})${2}
 snippet setAllowsImageEditing:
@@ -3278,6 +3480,12 @@ snippet setArrowDirection:
 	setArrowDirection(${1})${2}
 snippet setArrowOffset:
 	setArrowOffset(${1})${2}
+snippet setAttributeMappings:
+	setAttributeMappings(${1})${2}
+snippet setAttributeType:
+	setAttributeType(${1})${2}
+snippet setAttributeValueClassName:
+	setAttributeValueClassName(${1})${2}
 snippet setAttributedString:
 	setAttributedString(${1})${2}
 snippet setAttributes:ofItemAtPath:error:
@@ -3420,6 +3628,8 @@ snippet setCompletionBlock:
 	setCompletionBlock(${1})${2}
 snippet setCompositingFilter:
 	setCompositingFilter(${1})${2}
+snippet setCompoundIndexes:
+	setCompoundIndexes(${1})${2}
 snippet setContentEdgeInsets:
 	setContentEdgeInsets(${1})${2}
 snippet setContentHorizontalAlignment:
@@ -3534,6 +3744,8 @@ snippet setDefaultFormatterBehavior:
 	setDefaultFormatterBehavior(${1})${2}
 snippet setDefaultTimeZone:
 	setDefaultTimeZone(${1})${2}
+snippet setDefaultValue:
+	setDefaultValue(${1})${2}
 snippet setDefersCurrentPageDisplay:
 	setDefersCurrentPageDisplay(${1})${2}
 snippet setDefinesPresentationContext:
@@ -3548,6 +3760,14 @@ snippet setDelegate:
 	setDelegate(${1})${2}
 snippet setDelegateQueue:
 	setDelegateQueue(${1})${2}
+snippet setDeleteRule:
+	setDeleteRule(${1})${2}
+snippet setDestinationEntity:
+	setDestinationEntity(${1})${2}
+snippet setDestinationEntityName:
+	setDestinationEntityName(${1})${2}
+snippet setDestinationEntityVersionHash:
+	setDestinationEntityVersionHash(${1})${2}
 snippet setDestructiveButtonIndex:
 	setDestructiveButtonIndex(${1})${2}
 snippet setDetectsPhoneNumbers:
@@ -3624,6 +3844,16 @@ snippet setEndPoint:
 	setEndPoint(${1})${2}
 snippet setEndProgress:
 	setEndProgress(${1})${2}
+snippet setEntities:
+	setEntities(${1})${2}
+snippet setEntities:forConfiguration:
+	setEntities(${1}, forConfiguration: ${2})${3}
+snippet setEntity:
+	setEntity(${1})${2}
+snippet setEntityMappings:
+	setEntityMappings(${1})${2}
+snippet setEntityMigrationPolicyClassName:
+	setEntityMigrationPolicyClassName(${1})${2}
 snippet setEra:
 	setEra(${1})${2}
 snippet setEraSymbols:
@@ -3634,6 +3864,20 @@ snippet setExclusiveTouch:
 	setExclusiveTouch(${1})${2}
 snippet setExponentSymbol:
 	setExponentSymbol(${1})${2}
+snippet setExpression:
+	setExpression(${1})${2}
+snippet setExpressionResultType:
+	setExpressionResultType(${1})${2}
+snippet setFetchBatchSize:
+	setFetchBatchSize(${1})${2}
+snippet setFetchLimit:
+	setFetchLimit(${1})${2}
+snippet setFetchOffset:
+	setFetchOffset(${1})${2}
+snippet setFetchRequest:
+	setFetchRequest(${1})${2}
+snippet setFetchRequestTemplate:forName:
+	setFetchRequestTemplate(${1}, forName: ${2})${3}
 snippet setFileAttributes:
 	setFileAttributes(${1})${2}
 snippet setFileModificationDate:
@@ -3712,6 +3956,8 @@ snippet setHTTPShouldUsePipelining:
 	setHTTPShouldUsePipelining(${1})${2}
 snippet setHasAction:
 	setHasAction(${1})${2}
+snippet setHavingPredicate:
+	setHavingPredicate(${1})${2}
 snippet setHeaderHeight:
 	setHeaderHeight(${1})${2}
 snippet setHidden:
@@ -3740,6 +3986,8 @@ snippet setHighlightedTextColor:
 	setHighlightedTextColor(${1})${2}
 snippet setHour:
 	setHour(${1})${2}
+snippet setIdentifier:
+	setIdentifier(${1})${2}
 snippet setIdleTimerDisabled:
 	setIdleTimerDisabled(${1})${2}
 snippet setIgnoredWords:
@@ -3758,10 +4006,20 @@ snippet setImageInsets:
 	setImageInsets(${1})${2}
 snippet setImages:
 	setImages(${1})${2}
+snippet setIncludesPendingChanges:
+	setIncludesPendingChanges(${1})${2}
+snippet setIncludesPropertyValues:
+	setIncludesPropertyValues(${1})${2}
+snippet setIncludesSubentities:
+	setIncludesSubentities(${1})${2}
 snippet setIndentationLevel:
 	setIndentationLevel(${1})${2}
 snippet setIndentationWidth:
 	setIndentationWidth(${1})${2}
+snippet setIndexed:
+	setIndexed(${1})${2}
+snippet setIndexedBySpotlight:
+	setIndexedBySpotlight(${1})${2}
 snippet setIndicatorStyle:
 	setIndicatorStyle(${1})${2}
 snippet setInputAccessoryView:
@@ -3790,6 +4048,8 @@ snippet setInteger:forKey:
 	setInteger(${1}, forKey: ${2})${3}
 snippet setInternationalCurrencySymbol:
 	setInternationalCurrencySymbol(${1})${2}
+snippet setInverseRelationship:
+	setInverseRelationship(${1})${2}
 snippet setIsAccessibilityElement:
 	setIsAccessibilityElement(${1})${2}
 snippet setItems:
@@ -3860,6 +4120,8 @@ snippet setLineWidth:
 	setLineWidth(${1})${2}
 snippet setLocale:
 	setLocale(${1})${2}
+snippet setLocalizationDictionary:
+	setLocalizationDictionary(${1})${2}
 snippet setLocations:
 	setLocations(${1})${2}
 snippet setLongEraSymbols:
@@ -3870,6 +4132,10 @@ snippet setMagnificationFilter:
 	setMagnificationFilter(${1})${2}
 snippet setMainDocumentURL:
 	setMainDocumentURL(${1})${2}
+snippet setManagedObjectClassName:
+	setManagedObjectClassName(${1})${2}
+snippet setMappingType:
+	setMappingType(${1})${2}
 snippet setMarkedText:selectedRange:
 	setMarkedText(${1}, selectedRange: ${2})${3}
 snippet setMarkedTextStyle:
@@ -3882,6 +4148,8 @@ snippet setMasksToBounds:
 	setMasksToBounds(${1})${2}
 snippet setMaxConcurrentOperationCount:
 	setMaxConcurrentOperationCount(${1})${2}
+snippet setMaxCount:
+	setMaxCount(${1})${2}
 snippet setMaximum:
 	setMaximum(${1})${2}
 snippet setMaximumContentHeight:
@@ -3922,8 +4190,20 @@ snippet setMenuVisible:
 	setMenuVisible(${1})${2}
 snippet setMenuVisible:animated:
 	setMenuVisible(${1}, animated: ${2})${3}
+snippet setMergePolicy:
+	setMergePolicy(${1})${2}
 snippet setMessage:
 	setMessage(${1})${2}
+snippet setMetadata:
+	setMetadata(${1})${2}
+snippet setMetadata:forPersistentStore:
+	setMetadata(${1}, forPersistentStore: ${2})${3}
+snippet setMetadata:forPersistentStoreOfType:URL:error:
+	setMetadata(${1}, forPersistentStoreOfType: ${2}, URL: ${3}, error: ${4})${5}
+snippet setMetadata:forPersistentStoreWithURL:error:
+	setMetadata(${1}, forPersistentStoreWithURL: ${2}, error: ${3})${4}
+snippet setMinCount:
+	setMinCount(${1})${2}
 snippet setMinificationFilter:
 	setMinificationFilter(${1})${2}
 snippet setMinificationFilterBias:
@@ -4046,6 +4326,10 @@ snippet setOpacity:
 	setOpacity(${1})${2}
 snippet setOpaque:
 	setOpaque(${1})${2}
+snippet setOptional:
+	setOptional(${1})${2}
+snippet setOrdered:
+	setOrdered(${1})${2}
 snippet setOrientation:
 	setOrientation(${1})${2}
 snippet setOrthography:range:
@@ -4064,6 +4348,8 @@ snippet setPaddingPosition:
 	setPaddingPosition(${1})${2}
 snippet setPagingEnabled:
 	setPagingEnabled(${1})${2}
+snippet setParentContext:
+	setParentContext(${1})${2}
 snippet setPartialStringValidationEnabled:
 	setPartialStringValidationEnabled(${1})${2}
 snippet setPassthroughViews:
@@ -4080,6 +4366,8 @@ snippet setPersistent:
 	setPersistent(${1})${2}
 snippet setPersistentDomain:forName:
 	setPersistentDomain(${1}, forName: ${2})${3}
+snippet setPersistentStoreCoordinator:
+	setPersistentStoreCoordinator(${1})${2}
 snippet setPersistentStoreOptions:
 	setPersistentStoreOptions(${1})${2}
 snippet setPlaceholder:
@@ -4116,6 +4404,8 @@ snippet setPresentsWithGesture:
 	setPresentsWithGesture(${1})${2}
 snippet setPreservesDepth:
 	setPreservesDepth(${1})${2}
+snippet setPrimitiveValue:forKey:
+	setPrimitiveValue(${1}, forKey: ${2})${3}
 snippet setPrintFormatter:
 	setPrintFormatter(${1})${2}
 snippet setPrintFormatters:
@@ -4144,10 +4434,20 @@ snippet setProgressViewStyle:
 	setProgressViewStyle(${1})${2}
 snippet setPrompt:
 	setPrompt(${1})${2}
+snippet setPropagatesDeletesAtEndOfEvent:
+	setPropagatesDeletesAtEndOfEvent(${1})${2}
+snippet setProperties:
+	setProperties(${1})${2}
+snippet setPropertiesToFetch:
+	setPropertiesToFetch(${1})${2}
+snippet setPropertiesToGroupBy:
+	setPropertiesToGroupBy(${1})${2}
 snippet setProperty:forKey:
 	setProperty(${1}, forKey: ${2})${3}
 snippet setProperty:forKey:inRequest:
 	setProperty(${1}, forKey: ${2}, inRequest: ${3})${4}
+snippet setPropertyCache:
+	setPropertyCache(${1})${2}
 snippet setProvidesPresentationContextTransitionStyle:
 	setProvidesPresentationContextTransitionStyle(${1})${2}
 snippet setProximityMonitoringEnabled:
@@ -4162,14 +4462,22 @@ snippet setQueuePriority:
 	setQueuePriority(${1})${2}
 snippet setRasterizationScale:
 	setRasterizationScale(${1})${2}
+snippet setReadOnly:
+	setReadOnly(${1})${2}
 snippet setReadabilityHandler:
 	setReadabilityHandler(${1})${2}
 snippet setRedRange:
 	setRedRange(${1})${2}
 snippet setRedSpeed:
 	setRedSpeed(${1})${2}
+snippet setRelationshipKeyPathsForPrefetching:
+	setRelationshipKeyPathsForPrefetching(${1})${2}
+snippet setRelationshipMappings:
+	setRelationshipMappings(${1})${2}
 snippet setRemovedOnCompletion:
 	setRemovedOnCompletion(${1})${2}
+snippet setRenamingIdentifier:
+	setRenamingIdentifier(${1})${2}
 snippet setRenderMode:
 	setRenderMode(${1})${2}
 snippet setRepeatCalendar:
@@ -4186,10 +4494,18 @@ snippet setResourceValue:forKey:error:
 	setResourceValue(${1}, forKey: ${2}, error: ${3})${4}
 snippet setResourceValues:error:
 	setResourceValues(${1}, error: ${2})${3}
+snippet setResultType:
+	setResultType(${1})${2}
+snippet setRetainsRegisteredObjects:
+	setRetainsRegisteredObjects(${1})${2}
 snippet setReturnKeyType:
 	setReturnKeyType(${1})${2}
 snippet setReturnValue:
 	setReturnValue(${1})${2}
+snippet setReturnsDistinctResults:
+	setReturnsDistinctResults(${1})${2}
+snippet setReturnsObjectsAsFaults:
+	setReturnsObjectsAsFaults(${1})${2}
 snippet setReversesTitleShadowWhenHighlighted:
 	setReversesTitleShadowWhenHighlighted(${1})${2}
 snippet setRightBarButtonItem:
@@ -4352,6 +4668,8 @@ snippet setShouldProcessNamespaces:
 	setShouldProcessNamespaces(${1})${2}
 snippet setShouldRasterize:
 	setShouldRasterize(${1})${2}
+snippet setShouldRefreshRefetchedObjects:
+	setShouldRefreshRefetchedObjects(${1})${2}
 snippet setShouldReportNamespacePrefixes:
 	setShouldReportNamespacePrefixes(${1})${2}
 snippet setShouldResolveExternalEntities:
@@ -4384,6 +4702,12 @@ snippet setSortDescriptors:
 	setSortDescriptors(${1})${2}
 snippet setSoundName:
 	setSoundName(${1})${2}
+snippet setSourceEntityName:
+	setSourceEntityName(${1})${2}
+snippet setSourceEntityVersionHash:
+	setSourceEntityVersionHash(${1})${2}
+snippet setSourceExpression:
+	setSourceExpression(${1})${2}
 snippet setSourceType:
 	setSourceType(${1})${2}
 snippet setSpeed:
@@ -4396,6 +4720,8 @@ snippet setSpinRange:
 	setSpinRange(${1})${2}
 snippet setStackSize:
 	setStackSize(${1})${2}
+snippet setStalenessInterval:
+	setStalenessInterval(${1})${2}
 snippet setStandaloneMonthSymbols:
 	setStandaloneMonthSymbols(${1})${2}
 snippet setStandaloneQuarterSymbols:
@@ -4426,6 +4752,8 @@ snippet setStatusBarStyle:animated:
 	setStatusBarStyle(${1}, animated: ${2})${3}
 snippet setStepValue:
 	setStepValue(${1})${2}
+snippet setStoredInExternalRecord:
+	setStoredInExternalRecord(${1})${2}
 snippet setString:
 	setString(${1})${2}
 snippet setString:forKey:
@@ -4440,6 +4768,8 @@ snippet setStrokeStart:
 	setStrokeStart(${1})${2}
 snippet setStyle:
 	setStyle(${1})${2}
+snippet setSubentities:
+	setSubentities(${1})${2}
 snippet setSublayerTransform:
 	setSublayerTransform(${1})${2}
 snippet setSublayers:
@@ -4552,6 +4882,8 @@ snippet setTrackTintColor:
 	setTrackTintColor(${1})${2}
 snippet setTransform:
 	setTransform(${1})${2}
+snippet setTransient:
+	setTransient(${1})${2}
 snippet setTranslation:inView:
 	setTranslation(${1}, inView: ${2})${3}
 snippet setTranslucent:
@@ -4566,6 +4898,8 @@ snippet setURL:
 	setURL(${1})${2}
 snippet setURL:forKey:
 	setURL(${1}, forKey: ${2})${3}
+snippet setURL:forPersistentStore:
+	setURL(${1}, forPersistentStore: ${2})${3}
 snippet setURLs:
 	setURLs(${1})${2}
 snippet setUTI:
@@ -4586,6 +4920,10 @@ snippet setUsesGroupingSeparator:
 	setUsesGroupingSeparator(${1})${2}
 snippet setUsesSignificantDigits:
 	setUsesSignificantDigits(${1})${2}
+snippet setUsesStoreSpecificMigrationManager:
+	setUsesStoreSpecificMigrationManager(${1})${2}
+snippet setValidationPredicates:withValidationWarnings:
+	setValidationPredicates(${1}, withValidationWarnings: ${2})${3}
 snippet setValue:
 	setValue(${1})${2}
 snippet setValue:animated:
@@ -4600,12 +4938,16 @@ snippet setValue:forPasteboardType:
 	setValue(${1}, forPasteboardType: ${2})${3}
 snippet setValue:forUndefinedKey:
 	setValue(${1}, forUndefinedKey: ${2})${3}
+snippet setValueExpression:
+	setValueExpression(${1})${2}
 snippet setValueFunction:
 	setValueFunction(${1})${2}
 snippet setValueListAttributes:
 	setValueListAttributes(${1})${2}
 snippet setValueTransformer:forName:
 	setValueTransformer(${1}, forName: ${2})${3}
+snippet setValueTransformerName:
+	setValueTransformerName(${1})${2}
 snippet setValues:
 	setValues(${1})${2}
 snippet setValuesForKeysWithDictionary:
@@ -4616,6 +4958,10 @@ snippet setVelocityRange:
 	setVelocityRange(${1})${2}
 snippet setVersion:
 	setVersion(${1})${2}
+snippet setVersionHashModifier:
+	setVersionHashModifier(${1})${2}
+snippet setVersionIdentifiers:
+	setVersionIdentifiers(${1})${2}
 snippet setVeryShortMonthSymbols:
 	setVeryShortMonthSymbols(${1})${2}
 snippet setVeryShortStandaloneMonthSymbols:
@@ -4768,6 +5114,10 @@ snippet sortedArrayWithOptions:usingComparator:
 	sortedArrayWithOptions(${1}, usingComparator: ${2})${3}
 snippet sortedCookiesUsingDescriptors:
 	sortedCookiesUsingDescriptors(${1})${2}
+snippet sourceEntityForEntityMapping:
+	sourceEntityForEntityMapping(${1})${2}
+snippet sourceInstancesForEntityMappingNamed:destinationInstances:
+	sourceInstancesForEntityMappingNamed(${1}, destinationInstances: ${2})${3}
 snippet spellCheckingResultWithRange:
 	spellCheckingResultWithRange(${1})${2}
 snippet splitViewController:popoverController:willPresentViewController:
@@ -5104,14 +5454,24 @@ snippet unresolvedConflictVersionsOfItemAtURL:
 	unresolvedConflictVersionsOfItemAtURL(${1})${2}
 snippet unscheduleFromRunLoop:forMode:
 	unscheduleFromRunLoop(${1}, forMode: ${2})${3}
+snippet updateCacheNode:fromManagedObject:
+	updateCacheNode(${1}, fromManagedObject: ${2})${3}
 snippet updateChangeCount:
 	updateChangeCount(${1})${2}
 snippet updateChangeCountWithToken:forSaveOperation:
 	updateChangeCountWithToken(${1}, forSaveOperation: ${2})${3}
+snippet updateWithValues:version:
+	updateWithValues(${1}, version: ${2})${3}
 snippet useCredential:forAuthenticationChallenge:
 	useCredential(${1}, forAuthenticationChallenge: ${2})${3}
 snippet userInteractionNoLongerPermittedForError:
 	userInteractionNoLongerPermittedForError(${1})${2}
+snippet validateForDelete:
+	validateForDelete(${1})${2}
+snippet validateForInsert:
+	validateForInsert(${1})${2}
+snippet validateForUpdate:
+	validateForUpdate(${1})${2}
 snippet validateValue:forKey:error:
 	validateValue(${1}, forKey: ${2}, error: ${3})${4}
 snippet validateValue:forKeyPath:error:
@@ -5130,6 +5490,8 @@ snippet valueForKeyPath:
 	valueForKeyPath(${1})${2}
 snippet valueForPasteboardType:
 	valueForPasteboardType(${1})${2}
+snippet valueForPropertyDescription:
+	valueForPropertyDescription(${1})${2}
 snippet valueForUndefinedKey:
 	valueForUndefinedKey(${1})${2}
 snippet valueOfAttribute:forResultAtIndex:
@@ -5222,6 +5584,8 @@ snippet webViewDidStartLoad:
 	webViewDidStartLoad(${1})${2}
 snippet widthForSegmentAtIndex:
 	widthForSegmentAtIndex(${1})${2}
+snippet willAccessValueForKey:
+	willAccessValueForKey(${1})${2}
 snippet willAnimateFirstHalfOfRotationToInterfaceOrientation:duration:
 	willAnimateFirstHalfOfRotationToInterfaceOrientation(${1}, duration: ${2})${3}
 snippet willAnimateRotationToInterfaceOrientation:duration:
@@ -5244,6 +5608,10 @@ snippet willPresentActionSheet:
 	willPresentActionSheet(${1})${2}
 snippet willPresentAlertView:
 	willPresentAlertView(${1})${2}
+snippet willRemoveCacheNodes:
+	willRemoveCacheNodes(${1})${2}
+snippet willRemoveFromPersistentStoreCoordinator:
+	willRemoveFromPersistentStoreCoordinator(${1})${2}
 snippet willRemoveSubview:
 	willRemoveSubview(${1})${2}
 snippet willRotateToInterfaceOrientation:duration:
